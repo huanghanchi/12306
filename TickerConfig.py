@@ -15,13 +15,13 @@ STATION_DATES = [
 # 填入需要购买的车次(list)，"G1353"
 # 修改车次填入规则，注：(以前设置的车次逻辑不变)，如果车次填入为空，那么就是当日乘车所有车次都纳入筛选返回
 # 不填车次是整个list为空才算，如果不是为空，依然会判断车次的，这种是错误的写法 [""], 正确的写法 []
-STATION_TRAINS = []
+STATION_TRAINS = ["Z247"]
 
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = "广州南"
+FROM_STATION = "上海南"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = "隆回"
+TO_STATION = "长沙"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -33,7 +33,7 @@ TO_STATION = "隆回"
 # "硬座",
 # "无座",
 # "动卧",
-SET_TYPE = ["二等座"]
+SET_TYPE = ["硬卧"]
 
 # 当余票小于乘车人，如果选择优先提交，则删减联系人和余票数一致在提交
 # bool
@@ -42,11 +42,11 @@ IS_MORE_TICKET = True
 # 乘车人(list) 多个乘车人ex:
 # "张三",
 # "李四"
-TICKET_PEOPLES = []
+TICKET_PEOPLES = ["唐霞","刘艾萌"]
 
 # 12306登录账号
-USER = ""
-PWD = ""
+USER = "xiciliu"
+PWD = "abc__123"
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
 TICKET_BLACK_LIST_TIME = 5
@@ -90,8 +90,8 @@ EMAIL_CONF = {
 
 # 是否开启 server酱 微信提醒， 使用前需要前往 http://sc.ftqq.com/3.version 扫码绑定获取 SECRET 并关注获得抢票结果通知的公众号
 SERVER_CHAN_CONF = {
-    "is_server_chan": False,
-    "secret": ""
+    "is_server_chan": True,
+    "secret": "SCU71761T20b31051aff64c258591aba61f507dbe5e01c05c2b5a0"
 }
 
 # 是否开启cdn查询，可以更快的检测票票 1为开启，2为关闭
